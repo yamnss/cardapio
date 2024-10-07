@@ -17,13 +17,14 @@
         }
         .menu {
             display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
+            flex-direction: column;
+            align-items: center;
             gap: 10px;
             margin-bottom: 20px;
         }
         .menu img {
-            width: 150px; /* Ajuste o tamanho da imagem conforme necessário */
+            width: 80%; /* Imagens ocupam 80% da largura da tela */
+            max-width: 300px; /* Limita a largura máxima */
             height: auto;
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -39,6 +40,7 @@
             border-radius: 5px;
             margin: 0 10px;
             transition: background-color 0.3s;
+            display: inline-block; /* Para garantir que o padding funcione corretamente */
         }
         .buttons a:hover {
             background-color: #218838; /* Cor do botão ao passar o mouse */
